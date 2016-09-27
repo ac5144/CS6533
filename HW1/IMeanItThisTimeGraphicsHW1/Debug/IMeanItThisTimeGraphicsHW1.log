@@ -1,0 +1,14 @@
+﻿Build started 9/26/2016 8:36:11 PM.
+     1>Project "C:\Users\Andrew\Desktop\IMeanItThisTimeGraphicsHW1\IMeanItThisTimeGraphicsHW1\IMeanItThisTimeGraphicsHW1.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         D:\Visual Studio\VC\bin\CL.exe /c /IC:/freeglut/include /IC:/glew/include /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+       Link:
+         D:\Visual Studio\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Andrew\Desktop\IMeanItThisTimeGraphicsHW1\Debug\IMeanItThisTimeGraphicsHW1.exe" /INCREMENTAL /NOLOGO /LIBPATH:C:/freeglut/lib /LIBPATH:C:/glew/lib/Release/Win32 freeglut.lib glew32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Andrew\Desktop\IMeanItThisTimeGraphicsHW1\Debug\IMeanItThisTimeGraphicsHW1.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /ENTRY:"mainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Andrew\Desktop\IMeanItThisTimeGraphicsHW1\Debug\IMeanItThisTimeGraphicsHW1.lib" /MACHINE:X86 Debug\glsupport.obj
+         Debug\main.obj
+         IMeanItThisTimeGraphicsHW1.vcxproj -> C:\Users\Andrew\Desktop\IMeanItThisTimeGraphicsHW1\Debug\IMeanItThisTimeGraphicsHW1.exe
+     1>Done Building Project "C:\Users\Andrew\Desktop\IMeanItThisTimeGraphicsHW1\IMeanItThisTimeGraphicsHW1\IMeanItThisTimeGraphicsHW1.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.62
