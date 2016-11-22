@@ -1,0 +1,24 @@
+﻿Build started 11/22/2016 3:36:00 AM.
+     1>Project "C:\Users\Andrew\Desktop\PracticeObjLoader\PracticeObjLoader\PracticeObjLoader.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         D:\Visual Studio\VC\bin\CL.exe /c /IC:/freeglut/include /IC:/glew/include /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+     1>c:\users\andrew\desktop\practiceobjloader\practiceobjloader\main.cpp(181): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\andrew\desktop\practiceobjloader\practiceobjloader\main.cpp(182): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\andrew\desktop\practiceobjloader\practiceobjloader\main.cpp(194): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\andrew\desktop\practiceobjloader\practiceobjloader\main.cpp(229): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\andrew\desktop\practiceobjloader\practiceobjloader\main.cpp(250): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\andrew\desktop\practiceobjloader\practiceobjloader\main.cpp(261): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>c:\users\andrew\desktop\practiceobjloader\practiceobjloader\main.cpp(262): warning C4305: 'argument' : truncation from 'double' to 'GLfloat'
+     1>c:\users\andrew\desktop\practiceobjloader\practiceobjloader\main.cpp(269): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>c:\users\andrew\desktop\practiceobjloader\practiceobjloader\main.cpp(277): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>c:\users\andrew\desktop\practiceobjloader\practiceobjloader\main.cpp(279): warning C4305: 'argument' : truncation from 'double' to 'GLfloat'
+       Link:
+         D:\Visual Studio\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Andrew\Desktop\PracticeObjLoader\Debug\PracticeObjLoader.exe" /INCREMENTAL /NOLOGO /LIBPATH:C:/freeglut/lib /LIBPATH:C:/glew/lib/Release/Win32 freeglut.lib glew32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Andrew\Desktop\PracticeObjLoader\Debug\PracticeObjLoader.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Andrew\Desktop\PracticeObjLoader\Debug\PracticeObjLoader.lib" /MACHINE:X86 Debug\glsupport.obj
+         Debug\main.obj
+         PracticeObjLoader.vcxproj -> C:\Users\Andrew\Desktop\PracticeObjLoader\Debug\PracticeObjLoader.exe
+     1>Done Building Project "C:\Users\Andrew\Desktop\PracticeObjLoader\PracticeObjLoader\PracticeObjLoader.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.09
