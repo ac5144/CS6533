@@ -55,6 +55,7 @@ GLuint screenFramebufferUniform;
 GLuint screenTrianglesPositionBuffer;
 GLuint screenTrianglesUVBuffer;
 GLuint screenTrianglesTexCoordAttribute, screenTrianglesPositionAttribute;
+GLuint depthBufferTexture;
 
 //STRUCTS
 struct VertexPNTBTG {
@@ -285,6 +286,8 @@ void display(void) {
 	
 	glUseProgram(program);
 	glBindFramebuffer(GL_FRAMEBUFFER, frameBuffer);
+	glViewport(0, 0, 750, 750);
+	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	
 	//EYE MATRIX
 	Matrix4 eyeMatrix;
@@ -334,12 +337,13 @@ void display(void) {
 
 	//////////////////////////////////////////////////////////////////////////
 	glBindFramebuffer(GL_FRAMEBUFFER, 0);
+	glViewport(0, 0, 750, 750);
 	glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT);
 
 	glUseProgram(screenTrianglesProgram);
 
 	glUniform1i(screenFramebufferUniform, 0);
-	glActiveTexture(GL_TEXTURE0);
+	glActiveTexture(GL_TEXTURE3);
 	glBindTexture(GL_TEXTURE_2D, frameBufferTexture);
 
 	glBindBuffer(GL_ARRAY_BUFFER, screenTrianglesPositionBuffer);
@@ -378,8 +382,7 @@ void init() {
 	glEnable(GL_LIGHTING);
 	glEnable(GL_BLEND);
 	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
-	glutInitDisplayMode(GLUT_DOUBLE|GLUT_RGBA|GLUT_DEPTH|GLUT_MULTISAMPLE);
-	glEnable(GL_MULTISAMPLE);
+	glutInitDisplayMode(GLUT_DOUBLE|GLUT_RGBA|GLUT_DEPTH);
 
 	screenTrianglesProgram = glCreateProgram();
 	readAndCompileShader(screenTrianglesProgram, "trivertex.glsl", "trifragment.glsl");
@@ -454,13 +457,24 @@ void init() {
 
 	glGenTextures(1, &frameBufferTexture);
 	glBindTexture(GL_TEXTURE_2D, frameBufferTexture);
-
-	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, 750, 750, 0, GL_RGB, GL_UNSIGNED_BYTE, 0);
+	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, 750, 750, 0, GL_RGB, GL_UNSIGNED_BYTE, NULL);
 
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
 
 	glFramebufferTexture2D(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, GL_TEXTURE_2D, frameBufferTexture, 0);
+
+	glGenTextures(1, &depthBufferTexture);
+	glBindTexture(GL_TEXTURE_2D, depthBufferTexture);
+	glTexImage2D(GL_TEXTURE_2D, 0, GL_DEPTH_COMPONENT, 750, 750, 0, GL_DEPTH_COMPONENT, GL_UNSIGNED_BYTE, NULL);
+
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
+
+	glRenderbufferStorage(GL_RENDERBUFFER, GL_DEPTH_COMPONENT24, 750, 750);
+	glFramebufferTexture2D(GL_FRAMEBUFFER, GL_DEPTH_ATTACHMENT, GL_TEXTURE_2D, depthBufferTexture, 0);
+
+	glBindFramebuffer(GL_FRAMEBUFFER, 0);
 }
 
 int main(int argc, char** argv)

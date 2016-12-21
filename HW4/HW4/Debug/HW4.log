@@ -1,14 +1,14 @@
 ﻿  main.cpp
-c:\users\andrew\desktop\hw4\hw4\main.cpp(215): warning C4018: '<': signed/unsigned mismatch
-c:\users\andrew\desktop\hw4\hw4\main.cpp(216): warning C4018: '<': signed/unsigned mismatch
-c:\users\andrew\desktop\hw4\hw4\main.cpp(228): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-c:\users\andrew\desktop\hw4\hw4\main.cpp(230): warning C4267: 'argument': conversion from 'size_t' to 'unsigned short', possible loss of data
-c:\users\andrew\desktop\hw4\hw4\main.cpp(263): warning C4018: '<': signed/unsigned mismatch
-c:\users\andrew\desktop\hw4\hw4\main.cpp(284): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-c:\users\andrew\desktop\hw4\hw4\main.cpp(298): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-c:\users\andrew\desktop\hw4\hw4\main.cpp(299): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-c:\users\andrew\desktop\hw4\hw4\main.cpp(306): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-c:\users\andrew\desktop\hw4\hw4\main.cpp(314): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-c:\users\andrew\desktop\hw4\hw4\main.cpp(316): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-  HW4.vcxproj -> C:\Users\Andrew\Desktop\HW4\Debug\HW4.exe
-  HW4.vcxproj -> C:\Users\Andrew\Desktop\HW4\Debug\HW4.pdb (Full PDB)
+c:\users\andrew\documents\github\cs6533\hw4\hw4\main.cpp(216): warning C4018: '<': signed/unsigned mismatch
+c:\users\andrew\documents\github\cs6533\hw4\hw4\main.cpp(217): warning C4018: '<': signed/unsigned mismatch
+c:\users\andrew\documents\github\cs6533\hw4\hw4\main.cpp(229): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\andrew\documents\github\cs6533\hw4\hw4\main.cpp(231): warning C4267: 'argument': conversion from 'size_t' to 'unsigned short', possible loss of data
+c:\users\andrew\documents\github\cs6533\hw4\hw4\main.cpp(264): warning C4018: '<': signed/unsigned mismatch
+c:\users\andrew\documents\github\cs6533\hw4\hw4\main.cpp(285): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\andrew\documents\github\cs6533\hw4\hw4\main.cpp(301): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\andrew\documents\github\cs6533\hw4\hw4\main.cpp(302): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\andrew\documents\github\cs6533\hw4\hw4\main.cpp(309): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\andrew\documents\github\cs6533\hw4\hw4\main.cpp(317): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\andrew\documents\github\cs6533\hw4\hw4\main.cpp(319): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+  HW4.vcxproj -> C:\Users\Andrew\Documents\GitHub\CS6533\HW4\Debug\HW4.exe
+  HW4.vcxproj -> C:\Users\Andrew\Documents\GitHub\CS6533\HW4\Debug\HW4.pdb (Full PDB)
